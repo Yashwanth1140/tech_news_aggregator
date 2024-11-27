@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sci-Fi News Hub - Latest in Science Fiction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .hero {
+            background-image: url('https://img.freepik.com/free-photo/futuristic-symmetry-reflection-abstract-background-with-orange-blue-neon-lights_181624-27637.jpg?semt=ais_hybrid');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+        }
+        .news-card {
+            transition: transform 0.3s ease-in-out;
+        }
+        .news-card:hover {
+            transform: translateY(-5px);
+        }
+        .text-justify {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-dark text-white py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1 class="mb-0">Sci-Fi News Hub</h1>
+                </div>
+                <div class="col-md-6">
+                    <nav class="navbar navbar-expand navbar-dark justify-content-end">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Movies</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">TV Shows</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Books</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Tech</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero d-flex align-items-center">
+        <div class="container text-center text-white">
+            <h2 class="display-4 fw-bold">Explore the Future of Sci-Fi</h2>
+            <p class="lead">Stay updated with the latest news, reviews, and insights from the world of science fiction</p>
+            <a href="#" class="btn btn-primary btn-lg mt-3">Subscribe Now</a>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Featured News</h2>
+            <div class="row">
+                <div class="col-md-8 mb-4">
+                    <div class="card news-card h-100">
+                        <img src="data:image/jpeg;base64,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" class="card-img-top" alt="Dune: Part Two">
+                        <div class="card-body">
+                            <h3 class="card-title">Dune: Part Two - First Look and Release Date Announced</h3>
+                            <p class="card-text text-justify">Warner Bros. has unveiled the first images from the highly anticipated sequel to Denis Villeneuve's Dune. The star-studded cast, including Timothée Chalamet, Zendaya, and newcomer Florence Pugh, promises an epic continuation of Frank Herbert's sci-fi saga. The film is set to hit theaters worldwide on October 20, 2023.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card news-card mb-4">
+                        <div class="card-body">
+                            <h4 class="card-title">Netflix Announces New Sci-Fi Series</h4>
+                            <p class="card-text">Streaming giant Netflix has greenlit a new high-concept science fiction series from the creators of "Stranger Things".</p>
+                            <a href="#" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                    <div class="card news-card">
+                        <div class="card-body">
+                            <h4 class="card-title">Breakthrough in Quantum Computing</h4>
+                            <p class="card-text">Scientists achieve a major milestone in quantum computing, bringing sci-fi concepts closer to reality.</p>
+                            <a href="#" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Recent Articles</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card news-card h-100">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALkAAACUCAMAAAD4QXiGAAABO1BMVEUAAAD///8AAAT7+/uWlpYAAArBwcEwMDDJyclHR0fp6elxcXFWVlbb29sTExO3t7fS0tKMjIyTczPBljdnZ2cjIyOpqanv7+/Jo2QnHha+mFmdgD06Ojp3d3d/f3+6mlQXEg2kfCfctGa8u4vDwZYqIxjwt0AlHQ0iGhYfGAyFZi25fyAcHBwCABPXrVjlvnDJoVPixHPq0n/s3pPu4aHu5K7t6MLt7L3m0pKtlnG7jTXgrUW7pFqskEjDsHDBtHm9vYHXtlqtkVMACgDMn0jpwFr57qL496Px+Lbe3LFPUEXS17v398A/RT25nEfpuz301WCYnHr564GWkFV0c03IuGtPPyPfz2xnYTu5kEZqTyZKRy+QfEDanCn+0lmAbTbDjySGckg5MSBcTytLMxI8KxSNYyB6XxdrTRbdPCbJAAAFBUlEQVR4nO2YD1fiRhDAExJDCAES0NAriHCc4UDO0xO9FrQWD87rP6G2tWKFoyfa+/6foLMb4Nk+dpL28UredX4iUTPu/tjMbjIrSQRBEARBEARBEARBEASxZCLw9def579HIpFF/xEWIo/8wm36d16sWuBfU83tvny5t/eUsb//6tXBQaPROGwcHh0dvX59eHjYaHzx5fNVSy6k0mwdH5/kTrYYx8dfnXqUy8+elU+/LpdPT9ufPVm15EIqmWYRjzgLrXmpyo6LJucb9lYMrXmnyc2l3e7+wcHbc+DdN99K0e++f/vuB/Z3Zh7KNWe7feGZt1y31+t1+/3++XlZ+vH8sv8TvxDhNd+9qPMfWm6r1Wm32u12//L854PL/i/FuflqFQVsP52aZ9zexRXjbr/f/xVe117yF3Ofh9O8ujfwluuM63Zubq5/W5Nu+/3uqH82fS4Ir/lgZj50e6PR6KQqVXZHvV7ravowwM3DmOiVZmlmPhy23N7Jc+l9l03V26ltaMd8bj52h+P3tdvryHZ3BJ9g1L7zAsJrnvHM34yH7mBNktakY9d1H1rD3l5ymi1b4cyWarNUZMfieDhsVsHw957rNiMXvaGb5gHF3EkllOZPBoMiO0Yyw3Ea7kkfBuNx506674xbW9vsRDENjwdhNK90BvweujaZTO7huD25mtwX4RNcXU0+sKoj+fAQTnNYFfGASC1dDaM4mLfOcrn0jD/S6Rq8PD5+rNXSN6WHkJqfdbu7mRnNJnsr7ezslDg7Y3irFVctuZAXbCFc82PVlgvh9/iID6uWXAi3CqscQRDE/5CNgqraSSwib6vqul8zpqqqJt6Lh50XxSTjcDoG/XkHX0xFlhWkT4jIynLKrxlVlmVVfDqWkKdkhYOQTMFpXZLicNj06w+wWXMOFmEaQcwVWVmGubLOzJW4X38QbrDmElEkZFnmis5ICROBm8tWcj2YuQmjAJEFLGRJ5oa0AYhjPHOlENBcg1SxcLPljbkF2MIYZg6TTi8ogcwhdLMA6YJM5uXmuXhKMXMDRlELZA7z0zAlfDL/p+YxPu4BzKHBrJZi16gujFlenuNwc8nhye5rzpbqKcIbBDe3bKCArEABzLMF1oiNri1Z3lsAc7h/KAkAgsUzh7fFMJAbVuBsEeelZ84H3dc8D/Mhkc/nmZv4Ws4vjIFM48D3UF/zGMgofvdQM6VpfKxtXdOFK20MojiOOKOkOJxHBirqaDOEFy4JFmw+FbAggiAIgggL0Slo9Q+1O1LLAEmvEfHz5iwCjZn34mfD4XWKZen47Tbq6FilCg9AHE1cFK6zjtg3VjfaKleu+9h4yLqN74JwNg20UpVMxYFmbE0RNhOz4bSBb8pIjlclbCi+2zuAIn66fYTlOGhdYGY9oSz6+WzxU53H1LwezFxNsoocT6xYNpZHW5ubo+OgWmjKgbkWZTJ4XzMUQ4f00/FQS4cJkUACTEXd3NyMpxR0V83fXPHmi3g36RGKznf70B7zTCgvI82ZcsKyFJgzaF/+5oa39xjMPECep2RYFHSsijaz69Go7ddWgGzhh+SyZmgs67CBcLLiZcHLcwcpwxn+5v9obTE0tttnIYuV42V4MiEe9OkM1WR08ViuueNXHUp1dVpfxlWhV94rUfMpdFVEGvAoeBv5dfGuKUEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBPHp8CfIcYmaCn8IggAAAABJRU5ErkJggg==" class="card-img-top" alt="Alien TV Series">
+                        <div class="card-body">
+                            <h5 class="card-title">Alien TV Series: What We Know So Far</h5>
+                            <p class="card-text">FX's upcoming Alien series promises to bring the xenomorphs to Earth. Here's everything we know about the show's plot, cast, and release date.</p>
+                            <a href="#" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card news-card h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7f8kkqSR2TKiVSRUg4MuTDJtM2xECBJTAcA&s" class="card-img-top" alt="AI in Literature">
+                        <div class="card-body">
+                            <h5 class="card-title">The Rise of AI in Science Fiction Literature</h5>
+                            <p class="card-text">Exploring how artificial intelligence is shaping modern sci-fi narratives and reflecting our hopes and fears about the future.</p>
+                            <a href="#" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card news-card h-100">
+                        <img src="data:image/jpeg;base64,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" class="card-img-top" alt="Space Tourism">
+                        <div class="card-body">
+                            <h5 class="card-title">Space Tourism: From Sci-Fi to Reality</h5>
+                            <p class="card-text">As private companies make strides in space travel, we examine how close we are to the space tourism depicted in science fiction.</p>
+                            <a href="#" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Trending Topics</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-2 col-4 mb-3">
+                    <a href="#" class="btn btn-outline-secondary w-100">#SpaceOpera</a>
+                </div>
+                <div class="col-md-2 col-4 mb-3">
+                    <a href="#" class="btn btn-outline-secondary w-100">#Cyberpunk</a>
+                </div>
+                <div class="col-md-2 col-4 mb-3">
+                    <a href="#" class="btn btn-outline-secondary w-100">#TimeTravel</a>
+                </div>
+                <div class="col-md-2 col-4 mb-3">
+                    <a href="#" class="btn btn-outline-secondary w-100">#AlienLife</a>
+                </div>
+                <div class="col-md-2 col-4 mb-3">
+                    <a href="#" class="btn btn-outline-secondary w-100">#VirtualReality</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>About Sci-Fi News Hub</h5>
+                    <p>Your go-to source for all things science fiction, from the latest news to in-depth analysis.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">About Us</a></li>
+                        <li><a href="#" class="text-white">Contact</a></li>
+                        <li><a href="#" class="text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Connect With Us</h5>
+                    <div class="d-flex">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p>&copy; 2023 Sci-Fi News Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
